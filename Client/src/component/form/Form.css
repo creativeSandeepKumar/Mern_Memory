@@ -1,0 +1,93 @@
+
+
+
+input, textarea {
+    box-sizing: border-box;
+}
+
+.form-form input[type="text"], .form-form textarea {
+   width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+   border: 1px solid rgba(128, 128, 128, 0.752);
+   border-radius: 3px;
+   
+    
+}
+.form-form input[type="text"]:focus, .form-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.708);
+   
+} 
+
+.form-form button {
+    width: 100%;
+}
+
+.form-main {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
+    border-radius: 4px;
+}
+
+.form-main h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.form-form button {
+    font-size: 1.2rem;
+    padding: 8px 5px;
+    text-align: center;
+    margin: 8px 0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.form-submitBtn {
+    background-color: #002984;
+    padding: 7px 0;
+    
+}
+.form-submitBtn:hover {
+    background-color: #33ab9f;
+}
+
+.form-clearBtn {
+    background-color: #ba000d;
+}
+
+.form-clearBtn:hover {
+    background-color: #ff3d00;
+  
+}
+
+
+@media screen and (max-width: 450px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow: auto;
+        overflow-wrap: break-word;
+    }
+    .form-form {
+        overflow: auto;
+        overflow-wrap: break-word;
+    }
+    .form-form input[type="text"], .form-form textarea {
+        width: 100%;
+        
+     }
+    
+}

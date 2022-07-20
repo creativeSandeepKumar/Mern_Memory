@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+.app-section-header {
+   padding: 4px 0;
+    border: 1px solid gray;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #000;
+    margin-top: 1.5rem;
+    background-color: white;
+}
+
+.app-section-header img {
+    width: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+}
+
+.app-section-header h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    height: 3rem;
+    /* color: 'rgba(0,183,255, 1)'; */
+    color: rgba(0,183,255, 1);
+   
+}
+
+.app-form {
+    grid-area: form;
+    max-width: 400px;
+}
+.app-posts {grid-area: posts;
+width: 100%;}
+
+.app-container {
+    display: grid;
+    grid-template-areas: "posts posts posts posts posts form";
+    justify-content: space-between;
+    gap: 2rem;
+ 
+}
+
+@media screen and (max-width: 768px) {
+    .app-form {
+    grid-area: form;
+    width: 100%;
+    max-width: 100%;
+}
+    .app-container {
+        grid-template-areas: 'form form form form form form' 'posts posts posts posts posts posts';
+       
+    }
+}
+@media screen and (max-width: 420px) {
+   .app-main{
+    width: 90%;
+   }
+}
+
+
+

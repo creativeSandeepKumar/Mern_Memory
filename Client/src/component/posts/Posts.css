@@ -1,0 +1,11 @@
+
+
+
+
+    .posts-item {
+        display: flex;
+        flex-wrap: wrap;
+      justify-content: space-around;
+        padding-top: 1rem;
+       overflow: auto;
+    }

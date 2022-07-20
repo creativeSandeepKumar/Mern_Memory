@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.post-main {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 300px;
+    margin-bottom: 1.5rem;
+    overflow-wrap: break-word;
+}
+.post-img {
+    position: relative;
+    color: white;   
+}
+
+.post-img img {
+    object-fit: cover;
+    max-height: 370px;
+    object-position: 80% 80%;
+}
+
+.post-top-section {
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-left h5 {
+    font-size: 1.5rem;
+}
+.post-right {
+    font-size: 1.5rem;
+    padding-right: 5px;
+}
+
+.post-details {
+    padding: 10px 15px;
+}
+
+.post-details h2 {
+    padding: 10px 0;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
+}
+
+.post-buttons button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.post-icon {
+    cursor: pointer;
+}
+
+.likepost {
+   /* background-color: rgba(0,183,255, 1); */
+   color: rgba(0,183,255, 1);
+}
+
+.post-ellipsis {
+    padding: 5px;
+}
+
+.post-message {
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 1100px) {
+   .post-main {
+   width: 250px;
+
+   }
+}
+@media screen and (min-width: 1296px) {
+   .post-main {
+   width: 300px;
+
+   }
+}
+@media screen and (max-width: 768px) {
+   .post-main {
+    width: 100%;
+    
+   }
+}
